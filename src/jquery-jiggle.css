@@ -1,4 +1,7 @@
+
 span.jiggle-item {
+    position: relative;
+
     animation: jiggle ease-in-out 1s;
     -webkit-animation: jiggle ease-in-out 1s;
     -moz-animation: jiggle ease-in-out 1s;
@@ -17,11 +20,18 @@ span.jiggle-item {
     -webkit-font-smoothing: antialiased;
 }
 
+@keyframes jiggle {
+  0% { top: 0.5em; }
+  100% { top: -0.5em; }
+}
+
 @-webkit-keyframes jiggle {
-  0% {
-    top: 0.5em;
-  }
-  100% {
-    top: -0.5em;
-  }
+  0% { top: 0.5em; }
+  100% { top: -0.5em; }
+}
+
+
+@-moz-keyframes jiggle {
+  0% { top: 0.5em; }
+  100% { top: -0.5em; }
 }
