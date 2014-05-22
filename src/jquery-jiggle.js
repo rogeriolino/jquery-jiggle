@@ -25,7 +25,7 @@
         this.each(function(i, e) {
             var elem = $(e);
             var text = elem.text();
-            elem.html('');
+            elem.html('').css('position', 'relative');
             for (var i = 0; i < text.length; i++) {
                 var char = text[i];
                 if (char === ' ') {
